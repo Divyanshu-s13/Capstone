@@ -1,0 +1,273 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 1440px;
+  min-height: 900px;
+  padding-right: 48px;
+  padding-left: 48px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(242,246,245,1);
+  color: rgba(0,0,0,1);
+}
+
+
+
+nav{
+  width: 1344px;
+  height: 120px;
+  padding-top: 32px;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+.nav-bar{
+  width: 1080px;
+  height: 88px;
+  border: 1.5px solid transparent;
+  border-radius: 20px;
+  display: flex;
+  gap: 20%;
+  padding: 32px 40px;
+  background-color: rgba(25,51,45,0.06);
+  box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.16)
+}
+.nav-link{
+  display: flex;
+  gap: 40px;
+  width: 235px;
+  height: 24px;
+}
+.nav-link p {
+  /* font-family: outfit; */
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 24px;
+}
+.nav-logo{
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.nav-logo p{
+  /* font-family: Source Serif 4; */
+  font-weight: 400;
+  font-size: 42px;
+  line-height: 42px;
+}
+.nav-social{
+  width: auto;
+  height: auto;
+  display: flex;
+  gap: 40px;
+}
+.nav-social p{
+  width: auto;
+  height: auto;
+  /* font-family: Outfit; */
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 24px;
+}
+.nav-fix{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+
+main{
+  width: 100%;
+  height: auto;
+}
+
+.main-hero{
+  width: 100%;
+  height: auto;
+  border-bottom: 1.5px solid transparent;
+  padding: 96px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 52px;
+}
+.main-hero p{
+  width: 1344px;
+  height: 120px;
+  /* font-family: Domine; */
+  font-size: 120px;
+  font-weight: 700;
+  line-height: 120px;
+  text-align: center;
+}
+.hero img{
+  width: 1344px;
+  height: 672px;
+  border-radius: 28px;
+  border-top: 1.5px solid transparent;
+}
+
+
+
+.main-page{
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid transparent;
+}
+.row1,.row2,.row3{
+  width: 100%;
+  height: auto;
+  padding-bottom: 48px;
+  display: flex;
+  gap: 48pxs;
+}
+.row1{
+  padding-top: 48px;
+}
+.page{
+  width: 100%;
+  height: 333px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.main-page img{
+  width: 416px;
+  height: 277px;
+  border-top: 1px solid rgba(0,0,0,0);
+
+}
+.page div{
+  width: 100%;
+  height: auto;
+}
+.page div p{
+  width: 416px;
+  height: 24px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.same-color{
+  font-size: 20px;
+}
+.diff-color{
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 17px;
+}
+
+
+.contact {
+  text-align: center;
+  margin: 200px auto;
+  width: 400px;
+  height: auto ;
+  gap: 8px;
+}
+.inner-contact{
+  width:400px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap:32px;
+  
+}
+.inner-para{
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 32px;
+}
+.inin-para{
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  color: rgba(0, 0, 0, 1);
+
+}
+
+.contact .input-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.contact .input-container div {
+  width: 50px;
+  height: 50px;
+  border: 2px solid #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  background-color: #fff;
+
+}
+
+.contact button {
+  
+  padding: 8px 16px 8px 16px;
+  border: none;
+  background-color: #333;
+  color: #fff;
+  border-radius: 8px;
+  margin: 5px;
+  width: 100%;
+  height: auto;
+}
+
+.contact button:hover {
+  background-color: #555;
+} 
+
+.footer-container {
+  display: flex;
+  padding: 20px;
+  gap: 24px;
+  justify-content: space-between;
+  padding: 96px 0 24px 0;
+  border-top: 1px solid #ccc;
+}
+
+.footer-left {
+  text-align: left;
+}
+
+.footer-right {
+  text-align: right;
+}
+
+.footer-nav {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-nav a {
+  text-decoration: none;
+  color: #333;
+}
+.footer-left p{
+  width: 237px;
+  height: 32px;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 32px;
+  color: rgba(0, 0, 0, 0.6);
+}
+.footer-button{
+  width: auto;
+  height: auto;
+  border-radius: 8px;
+  padding: 12px 24px;
+  color: rgba(0, 0, 0, 1);
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 1);
+}
+
+
+
+
