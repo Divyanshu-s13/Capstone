@@ -4,10 +4,11 @@
   box-sizing: border-box;
 }
 body {
-  width: 1440px;
+  width: 100%;
+  max-width: 1440px;
   min-height: 900px;
-  padding-right: 48px;
-  padding-left: 48px;
+  padding-right: 24px;
+  padding-left: 24px;
   margin-left: auto;
   margin-right: auto;
   background-color: rgba(242,246,245,1);
@@ -15,8 +16,7 @@ body {
 }
 
 
-
-nav{
+.nav{
   width: 1344px;
   height: 120px;
   padding-top: 32px;
@@ -33,7 +33,8 @@ nav{
   gap: 20%;
   padding: 32px 40px;
   background-color: rgba(25,51,45,0.06);
-  box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.16)
+  box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.16);
+  align-items: center;
 }
 .nav-link{
   display: flex;
@@ -42,10 +43,10 @@ nav{
   height: 24px;
 }
 .nav-link p {
-  /* font-family: outfit; */
   font-weight: 400;
   font-size: 17px;
   line-height: 24px;
+  font-family: Gothic A1;
 }
 .nav-logo{
   width: auto;
@@ -54,9 +55,9 @@ nav{
   justify-content: center;
   align-items: center;
   gap: 40px;
+  font-family: Abyssinica SIL;
 }
 .nav-logo p{
-  /* font-family: Source Serif 4; */
   font-weight: 400;
   font-size: 42px;
   line-height: 42px;
@@ -66,14 +67,15 @@ nav{
   height: auto;
   display: flex;
   gap: 40px;
+  align-items: center;
 }
 .nav-social p{
   width: auto;
   height: auto;
-  /* font-family: Outfit; */
   font-weight: 400;
   font-size: 17px;
   line-height: 24px;
+  font-family: Gothic A1;
 }
 .nav-fix{
   display: flex;
@@ -89,29 +91,38 @@ main{
 
 .main-hero{
   width: 100%;
-  height: auto;
-  border-bottom: 1.5px solid transparent;
-  padding: 96px 0;
-  display: flex;
-  flex-direction: column;
-  gap: 52px;
+  height: 1152px;
+  border-bottom: 1px solid transparent;
+  padding-top: 96px;
+  padding-bottom: 96px;
+  gap: 48px;
+  align-items: center;
 }
 .main-hero p{
   width: 1344px;
-  height: 120px;
-  /* font-family: Domine; */
+  height: 240px;
   font-size: 120px;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 120px;
   text-align: center;
-}
-.hero img{
-  width: 1344px;
-  height: 672px;
-  border-radius: 28px;
-  border-top: 1.5px solid transparent;
+  font-family: BIZ UDPMincho;
+  margin-bottom: 48px;
 }
 
+.main-hero img{
+  width: 100%;
+  height: 672px;
+  border-radius: 22px;
+  border-top: 1px solid transparent;
+}
+.main-hero p{
+  animation: flaot 2s ease-in 1;
+}
+@keyframes flaot{
+  0%{
+    translate: 0 300px;
+  }
+}
 
 
 .main-page{
@@ -124,7 +135,7 @@ main{
   height: auto;
   padding-bottom: 48px;
   display: flex;
-  gap: 48pxs;
+  gap: 48px;
 }
 .row1{
   padding-top: 48px;
@@ -154,10 +165,12 @@ main{
 }
 .same-color{
   font-size: 20px;
+  font-family: Gothic A1;
 }
 .diff-color{
   color: rgba(0, 0, 0, 0.6);
   font-size: 17px;
+  font-family: Gothic A1;
 }
 
 
@@ -180,12 +193,14 @@ main{
   font-weight: 400;
   font-size: 28px;
   line-height: 32px;
+  font-family: BIZ UDPMincho;
 }
 .inin-para{
   font-size: 15px;
   font-weight: 400;
   line-height: 20px;
   color: rgba(0, 0, 0, 1);
+  font-family: Gothic A1;
 
 }
 
@@ -205,6 +220,7 @@ main{
   justify-content: center;
   border-radius: 4px;
   background-color: #fff;
+  font-family:Gothic A1 ;
 
 }
 
@@ -218,6 +234,7 @@ main{
   margin: 5px;
   width: 100%;
   height: auto;
+  font-family: Roboto Mono;
 }
 
 .contact button:hover {
@@ -251,12 +268,13 @@ main{
   color: #333;
 }
 .footer-left p{
-  width: 237px;
+  width: 250px;
   height: 32px;
   font-weight: 400;
   font-size: 28px;
   line-height: 32px;
   color: rgba(0, 0, 0, 0.6);
+  font-family: BIZ UDPMincho;
 }
 .footer-button{
   width: auto;
@@ -266,7 +284,224 @@ main{
   color: rgba(0, 0, 0, 1);
   background-color: transparent;
   border: 1px solid rgba(0, 0, 0, 1);
+  font-family:Roboto Mono ;
 }
+
+nav {
+  width: 100%;
+  height: auto;
+  padding-top: 32px;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.nav-bar {
+  width: 100%;
+  max-width: 1080px;
+  height: auto;
+  min-height: 88px;
+  border: 1.5px solid transparent;
+  border-radius: 20px;
+  display: flex;
+  gap: 20%;
+  padding: 32px 40px;
+  background-color: rgba(25,51,45,0.06);
+  box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.16);
+}
+
+@media screen and (max-width: 1200px) {
+  nav {
+    padding: 32px 20px;
+  }
+
+  .nav-bar {
+    gap: 10%;
+    padding: 32px 20px;
+  }
+
+  .nav-link {
+    gap: 20px;
+  }
+
+  .main-hero p {
+    width: 100%;
+    font-size: 80px;
+    line-height: 90px;
+    height: auto;
+  }
+
+  .hero img {
+    width: 100%;
+    height: auto;
+  }
+
+  .row1, .row2, .row3 {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+  }
+
+  .page {
+    width: calc(50% - 24px);
+  }
+
+  .page img {
+    width: 100%;
+    height: auto;
+  }
+
+  .page div p {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 991px) {
+  .nav-bar {
+    flex-direction: column;
+    height: auto;
+    gap: 20px;
+    align-items: center;
+    padding: 24px 20px;
+  }
+
+  .nav-link {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .nav-fix {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-logo {
+    font-size: 32px;
+  }
+
+  .nav-social {
+    margin-left: auto;
+  }
+
+  .main-hero p {
+    font-size: 60px;
+    line-height: 70px;
+    padding: 0 20px;
+  }
+
+  .contact {
+    width: 90%;
+    max-width: 400px;
+  }
+
+  .inner-contact {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  body {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+
+  nav {
+    padding: 16px 10px;
+  }
+
+  .nav-bar {
+    padding: 20px 15px;
+  }
+
+  .nav-fix {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .nav-link {
+    gap: 15px;
+  }
+
+  .nav-logo p {
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  .nav-social {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .main-hero p {
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  .main-hero {
+    padding: 48px 0;
+    gap: 32px;
+  }
+
+  .page {
+    width: 100%;
+    height: auto;
+  }
+
+  .row1, .row2, .row3 {
+    padding-bottom: 24px;
+  }
+
+  .contact .input-container {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .contact .input-container div {
+    width: 40px;
+    height: 40px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 48px 0 24px 0;
+  }
+
+  .footer-left p {
+    text-align: center;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .nav-link {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+
+  .nav-logo p {
+    font-size: 28px;
+  }
+
+  .nav-social p {
+    font-size: 15px;
+  }
+
+  .main-hero p {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .contact {
+    margin: 100px auto;
+  }
+}
+
+
+
 
 
 
